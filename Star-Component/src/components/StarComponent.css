@@ -1,0 +1,33 @@
+.star-container {
+  display: flex;
+  gap: 5px;
+}
+
+.star-label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.rating-input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.star {
+  font-size: 35px;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    color 0.2s ease;
+}
+
+.star.active {
+  color: gold;
+}
+
+.star:hover {
+  transform: scale(1.1);
+}

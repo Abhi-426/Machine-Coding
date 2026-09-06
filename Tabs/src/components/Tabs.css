@@ -1,0 +1,20 @@
+.tabs {
+  width: 100%;
+}
+
+.tabs-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.tab-title {
+  cursor: pointer;
+  width: fit-content;
+  padding: 5px;
+}
+
+.tab-title:hover {
+  background-color: rgb(230, 227, 227);
+}

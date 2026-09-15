@@ -1,0 +1,23 @@
+.snackbar {
+  padding: 12px 20px;
+  width: fit-content;
+  margin: 2px;
+}
+
+.snackbar.success {
+  background: green;
+}
+
+.snackbar.error {
+  background: rgb(87, 5, 5);
+}
+
+.snackbar.top-right {
+  margin-left: auto;
+  margin-right: 2px;
+}
+
+.snackbar.bottom-left {
+  bottom: 20px;
+  left: 20px;
+}

@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 
 function App() {
   const [data, setData] = useState([]);
@@ -6,7 +6,7 @@ function App() {
   const startIndex = Math.floor(scrollTop / 30);
   const endIndex = Math.floor((scrollTop + 300) / 30);
 
-  const generateRows = () => {
+  const generateRows = useCallback(() => {
     const virtualizedData = [];
     for (let i = startIndex; i <= endIndex; i++) {
       if (!data[i]) continue;
@@ -23,7 +23,7 @@ function App() {
       );
     }
     return virtualizedData;
-  };
+  }, [, scrollTop, data, startIndex, endIndex]);
 
   const fetchData = async () => {
     const response = await fetch("https://jsonplaceholder.typicode.com/posts");

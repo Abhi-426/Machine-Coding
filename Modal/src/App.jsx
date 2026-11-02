@@ -17,7 +17,7 @@ function App() {
         </div>
         <button
           style={{
-            display: "absolute",
+            // display: "absolute",
             border: "1px solid black",
             background: "red",
             justifySelf: "end",
